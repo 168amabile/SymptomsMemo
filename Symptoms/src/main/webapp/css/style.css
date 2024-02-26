@@ -1,0 +1,144 @@
+@charset "UTF-8";/* 文字セットを指定しています */
+*{
+	margin:0;/* すべての要素のマージン（余白）をゼロに設定しています */
+	padding:0;/* すべての要素のパディング（内側の余白）をゼロに設定しています */
+}
+body{
+	background-color:#afeeee;/* ページの背景色を設定しています */
+	font-family: sans-serif;/* テキストのフォントを設定しています */
+}
+h1{
+	border-bottom:5px dotted #000080;/* 見出し（h1）の下に1ピクセルの線を引いています */
+	color: #000080; /* h1のテキスト色を指定しています */
+	font-size:1.8rem;/* テキストサイズを設定しています */
+	
+}
+.wrapper{
+	width:70%;/* ページの幅を70%に設定しています */
+	padding:5rem;/* wrapperクラスの要素（コンテンツを包む箱）のパディングを5remに設定しています */
+	margin:3rem auto;/* wrapperクラスの要素をページの上下に3rem、左右に自動で配置しています */
+	background-color:#e0ffff;/* wrapperクラスの背景色を設定しています */
+	text-align:center; /* wrapperクラスの中のテキストの配置を設定しています */
+}
+
+.wrapper p {
+    text-align: center; /* パラグラフのテキストを設定する */
+}
+
+.main{
+	width:500px;/* メインコンテンツの幅を500ピクセルに設定しています */
+	margin:7rem auto;/* メインコンテンツをページの上下に7rem、左右に自動で配置しています */
+	background-color:#fff; /* メインコンテンツの背景色を設定しています */
+	padding:1.5rem;/* メインコンテンツの内側の余白を1.5remに設定しています */
+}
+.p{
+	margin :1.0rem;/* 段落（p要素）の周囲に1remの余白を設定しています */
+	font-size:0.5rem;/* 段落のテキストサイズを0.8rem（小さめ）に設定しています */
+	font-family:sans-serif;/* 段落のフォントをsans-serif（ゴシック体風）に設定しています */
+}
+.error{
+	color:#000080;/* エラーメッセージのテキスト色を赤に設定しています */
+}
+.example-text {
+  font-size: 0.8rem; /* フォントサイズを小さくします */
+}
+.button-container {
+    text-align: right; /* ボタンを右寄せにする */
+}
+.login-link {
+    display: block; /* 要素をブロックレベルに変更 */
+    text-align: right; /* リンクを右寄せにする */
+    margin-top: 1rem; /* リンクの上部に余白を追加 */
+}
+.wide-button {
+    width: 350px; /* 任意の幅を指定してください */
+    font-size: 1.0rem; /* フォントサイズを小さくします */
+    color: #000080; /* テキスト色を指定しています */ 
+}
+
+
+
+
+
+.button-container {
+    border-bottom: 5px dotted #000080;
+}
+
+h3{
+	color: #000080; /* h3のテキスト色を指定しています */
+}
+
+
+.radio-item {
+  margin-bottom: 10px; /* 余白を追加 */
+}
+
+
+/* 各ラジオボタンの間に横の空白を追加 */
+/*input[type="radio"] { */
+/*  margin-right: 20px; */
+/*} */
+/*input[type="radio"] { */
+/*  margin-right: 0px; /* ラジオボタンの右側に10pxのスペースを追加 */
+/*} */
+
+
+
+
+.wide-textbox {
+  width: 200px; /* 幅を適切なピクセル数に調整 */
+}
+
+.datetime-local-input {
+  width: 180px; /* 適切な幅に設定します */
+}
+
+
+.label {
+  font-size: 1.2rem; /* フォントサイズを設定 */
+  font-weight: bold; 
+  color: #000080; /* テキスト色を指定しています */ 
+}
+
+.label1 {
+  font-size: 0.8rem; /* フォントサイズを設定 */
+}
+
+.custom-text {
+    color: #000080; /* テキスト色を指定しています */
+    font-size: 0.8rem; /* テキストサイズを指定しています */
+   	margin:0.8rem auto;/* メインコンテンツをページの上下に7rem、左右に自動で配置しています */
+
+}
+
+
+/* 600px未満の画面幅に対するスタイル */
+@media screen and (max-width: 480px) {
+    .wrapper {
+        width: 45%; /* 画面幅の90%に設定 */
+    }
+    
+    .main {
+        width: 45%; /* 画面幅の90%に設定 */
+    }
+    
+    /* 他の要素にも適用可能なスタイルを追加 */
+    .wide-button {
+     width: 90%; /* 画面幅の90%に設定 */
+    }
+    
+    .datetime-local-input{
+	 width: 90%; /* 画面幅の90%に設定 */	
+	}
+	
+	.wide-textbox{
+	 width: 90%; /* 画面幅の90%に設定 */		
+	}
+
+	.label1 {
+   	 display: block; /* 縦並びにする */
+  	}
+  	.label {
+  font-size: 1.0rem; /* フォントサイズを設定 */
+ }
+}
